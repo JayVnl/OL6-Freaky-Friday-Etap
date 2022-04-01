@@ -15,8 +15,7 @@ struct HomeView: View {
 			VStack {
 				TopBar()
 				Spacer()
-				Rectangle()
-					.frame(maxWidth: 300, maxHeight: 300)
+				TimerButton()
 				Spacer()
 				Rectangle()
 					.frame(maxWidth: 300, maxHeight: 90)

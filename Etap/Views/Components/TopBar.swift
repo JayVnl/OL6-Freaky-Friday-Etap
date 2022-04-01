@@ -17,7 +17,7 @@ struct TopBar: View {
 					VStack(alignment: .leading,spacing: 5) {
 						Rectangle()
 							.fill(Color("Primary"))
-							.frame(maxHeight: 120)
+							.frame(maxHeight: 130)
 						Rectangle()
 							.fill(Color("Primary"))
 							.frame(maxHeight: 5)
@@ -28,7 +28,7 @@ struct TopBar: View {
 							.fill(Color("Primary"))
 							.frame(maxWidth: g.size.width * 0.5, maxHeight: 5)
 					}
-				}.frame(maxHeight: 150)
+				}.frame(maxHeight: 160)
 				
 				HStack {
 					VStack(alignment: .leading) {
