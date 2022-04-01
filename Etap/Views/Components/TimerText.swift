@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct Timer: View {
+struct TimerText: View {
 	// MARK: PROPERTIES
+	let label: String
 	
 	// MARK: BODY
     var body: some View {
@@ -28,7 +29,7 @@ struct Timer: View {
 						.foregroundColor(Color("Primary"))
 				} //: HSTACK
 				Spacer()
-				Text("00:00:00")
+				Text(label)
 					.font(.system(size: 60))
 					.foregroundColor(Color("Primary"))
 				Spacer()
@@ -54,6 +55,6 @@ struct Timer: View {
 // MARK: PREVIEW
 struct Timer_Previews: PreviewProvider {
     static var previews: some View {
-        Timer().previewLayout(.sizeThatFits)
+			TimerText(label: "00:00:00").previewLayout(.sizeThatFits)
     }
 }

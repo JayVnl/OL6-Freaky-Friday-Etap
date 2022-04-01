@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TimerButton: View {
 	// MARK: PROPERTIES
+	var stopWatchService: StopwatchService
 	
 	// MARK: BODY
     var body: some View {
@@ -16,7 +17,7 @@ struct TimerButton: View {
 				Circle()
 					.stroke(Color("Primary"), lineWidth: 5)
 					.foregroundColor(Color("Secondary"))
-				Button(action: {} ){
+				Button(action: {self.stopWatchService.start()} ){
 						Image(systemName: "stopwatch")
 								.foregroundColor(Color("Secondary"))
 								.font(.system(size: 50))
@@ -33,6 +34,6 @@ struct TimerButton: View {
 // MARK: PREVIEW
 struct TimerButton_Previews: PreviewProvider {
     static var previews: some View {
-        TimerButton().previewLayout(.sizeThatFits)
+			TimerButton(stopWatchService: StopwatchService()).previewLayout(.sizeThatFits)
     }
 }

@@ -39,7 +39,7 @@ struct TopBar: View {
 							.foregroundColor(Color.white)
 					} //: VSTACK
 					Spacer()
-					Text("1st of April")
+					Text(DateFormatter.displayDate.string(from: Date()))
 						.foregroundColor(Color.white)
 				} //: HSTACK
 				.frame(maxWidth: .infinity)
@@ -55,4 +55,12 @@ struct TopBar_Previews: PreviewProvider {
     static var previews: some View {
         TopBar().previewLayout(.sizeThatFits)
     }
+}
+
+extension DateFormatter {
+		static let displayDate: DateFormatter = {
+				 let formatter = DateFormatter()
+				 formatter.dateFormat = "EEEE, d MMMM"
+				 return formatter
+		}()
 }
