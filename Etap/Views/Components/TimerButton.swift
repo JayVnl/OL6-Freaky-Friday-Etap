@@ -24,7 +24,7 @@ struct TimerButton: View {
 				}
 				.background(Circle())
 				.foregroundColor(Color("Primary"))
-			}
+			} //: ZSTACK
 			.padding(.horizontal, 40)
 			.frame(maxHeight: 320)
     }
