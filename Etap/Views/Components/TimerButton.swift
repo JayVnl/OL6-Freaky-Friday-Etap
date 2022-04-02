@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TimerButton: View {
 	// MARK: PROPERTIES
-	var stopWatchService: StopwatchService
+	@EnvironmentObject var stopWatchService: StopWatchService
 	
 	// MARK: BODY
     var body: some View {
@@ -17,14 +17,38 @@ struct TimerButton: View {
 				Circle()
 					.stroke(Color("Primary"), lineWidth: 5)
 					.foregroundColor(Color("Secondary"))
-				Button(action: {self.stopWatchService.start()} ){
-						Image(systemName: "stopwatch")
-								.foregroundColor(Color("Secondary"))
-								.font(.system(size: 50))
-								.padding(30)
+				
+				switch (stopWatchService.mode) {
+					case .running:
+						Button(action: {self.stopWatchService.pause()} ){
+								Image(systemName: "stop.circle")
+										.foregroundColor(Color("Secondary"))
+										.font(.system(size: 50))
+										.padding(30)
+						}
+						.background(Circle())
+						.foregroundColor(Color("Primary"))
+
+					case .paused:
+						Button(action: {self.stopWatchService.start()} ){
+								Image(systemName: "play.circle")
+										.foregroundColor(Color("Secondary"))
+										.font(.system(size: 50))
+										.padding(30)
+						}
+						.background(Circle())
+						.foregroundColor(Color("Primary"))
+
+					case .stopped:
+						Button(action: {self.stopWatchService.start()} ){
+								Image(systemName: "stopwatch")
+										.foregroundColor(Color("Secondary"))
+										.font(.system(size: 50))
+										.padding(30)
+						}
+						.background(Circle())
+						.foregroundColor(Color("Primary"))
 				}
-				.background(Circle())
-				.foregroundColor(Color("Primary"))
 			} //: ZSTACK
 			.padding(.horizontal, 40)
 			.frame(maxHeight: 320)
@@ -34,6 +58,8 @@ struct TimerButton: View {
 // MARK: PREVIEW
 struct TimerButton_Previews: PreviewProvider {
     static var previews: some View {
-			TimerButton(stopWatchService: StopwatchService()).previewLayout(.sizeThatFits)
+			TimerButton()
+				.environmentObject(StopWatchService())
+				.previewLayout(.sizeThatFits)
     }
 }

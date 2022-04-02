@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct EtapApp: App {
-    var body: some Scene {
-        WindowGroup {
-            HomeView()
-        }
-    }
+	// MARK: PROPERTIES
+	@ObservedObject var stopWatchService = StopWatchService()
+	
+	// MARK: BODY
+	var body: some Scene {
+		WindowGroup {
+			HomeView()
+				.environmentObject(stopWatchService)
+		}
+	}
 }

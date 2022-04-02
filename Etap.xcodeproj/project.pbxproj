@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2545C7B827F7937900B26557 /* StopwatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2545C7B727F7937900B26557 /* StopwatchService.swift */; };
+		2545C7B827F7937900B26557 /* StopWatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2545C7B727F7937900B26557 /* StopWatchService.swift */; };
 		25515C2E27F7368500DCD037 /* EtapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25515C2D27F7368500DCD037 /* EtapApp.swift */; };
 		25515C3027F7368500DCD037 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25515C2F27F7368500DCD037 /* HomeView.swift */; };
 		25515C3227F7368700DCD037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25515C3127F7368700DCD037 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2545C7B727F7937900B26557 /* StopwatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchService.swift; sourceTree = "<group>"; };
+		2545C7B727F7937900B26557 /* StopWatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchService.swift; sourceTree = "<group>"; };
 		25515C2A27F7368500DCD037 /* Etap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Etap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25515C2D27F7368500DCD037 /* EtapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtapApp.swift; sourceTree = "<group>"; };
 		25515C2F27F7368500DCD037 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		2545C7B627F7935D00B26557 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				2545C7B727F7937900B26557 /* StopwatchService.swift */,
+				2545C7B727F7937900B26557 /* StopWatchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25515C3027F7368500DCD037 /* HomeView.swift in Sources */,
-				2545C7B827F7937900B26557 /* StopwatchService.swift in Sources */,
+				2545C7B827F7937900B26557 /* StopWatchService.swift in Sources */,
 				25515C4027F74A3800DCD037 /* TimerButton.swift in Sources */,
 				25515C3E27F7439C00DCD037 /* TopBar.swift in Sources */,
 				25ABA86627F7524D0029F781 /* TimerText.swift in Sources */,

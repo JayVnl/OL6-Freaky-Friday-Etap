@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
 	// MARK: PROPERTIES
-	@ObservedObject var stopWatchService = StopwatchService()
+	@EnvironmentObject var stopWatchService: StopWatchService
 	
 	// MARK: BODY
     var body: some View {
@@ -19,7 +19,8 @@ struct HomeView: View {
 				
 				Spacer()
 				
-				TimerButton(stopWatchService: stopWatchService)
+				TimerButton()
+					.environmentObject(stopWatchService)
 				
 				Spacer()
 				
@@ -40,6 +41,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
 			HomeView()
+				.environmentObject(StopWatchService())
     }
 }
 
