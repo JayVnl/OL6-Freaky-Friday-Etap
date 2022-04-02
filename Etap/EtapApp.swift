@@ -10,14 +10,14 @@ import SwiftUI
 @main
 struct EtapApp: App {
 	// MARK: PROPERTIES
-	@ObservedObject var stopWatchService = StopWatchService()
 	@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+	@ObservedObject var pedometerService = PedometerService()
 	
 	// MARK: BODY
 	var body: some Scene {
 		WindowGroup {
 			HomeView()
-				.environmentObject(stopWatchService)
+				.environmentObject(pedometerService)
 				.onAppear {
 					UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
 					AppDelegate.orientationLock = .portrait

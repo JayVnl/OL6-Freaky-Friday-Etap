@@ -10,33 +10,7 @@ import CoreMotion
 
 struct HomeView: View {
 	// MARK: PROPERTIES
-	@EnvironmentObject var stopWatchService: StopWatchService
-	private let pedometer: CMPedometer = CMPedometer()
-	
-	@State private var steps: Double?
-	
-	private var isPedometerAvailable: Bool {
-		return CMPedometer.isPedometerEventTrackingAvailable() && CMPedometer.isStepCountingAvailable()
-	}
-	
-	private func initializePedometer() {
-		if isPedometerAvailable {
-			
-			pedometer.queryPedometerData(from: Calendar.current.startOfDay(for: Date()), to: Date()) { (data, error) in
-				guard let data = data, error == nil else { return }
-
-				steps = data.numberOfSteps.doubleValue
-			}
-			
-			pedometer.startUpdates(from: Calendar.current.startOfDay(for: Date())) { data, error in
-				guard let data = data, error == nil else { return }
-				
-				DispatchQueue.main.async {
-					steps = data.numberOfSteps.doubleValue
-				}
-			}
-		}
-	}
+		@EnvironmentObject var pedoMeterService: PedometerService
 	
 	// MARK: BODY
 	var body: some View {
@@ -47,14 +21,12 @@ struct HomeView: View {
 			Spacer()
 			
 			TimerButton()
-				.environmentObject(stopWatchService)
 			
 			Spacer()
 			
-//			TimerText(label: formatInterval(interval: stopWatchService.secondsElapsed))
-			TimerText(label: formatInterval(interval: steps ?? 0))
+			TimerText(label: formatInterval(interval: pedoMeterService.steps ?? 0))
 			
-			Text(steps != nil ? "\(Int(steps!)) steps" : "steps")
+			Text(pedoMeterService.steps != nil ? "\(Int(pedoMeterService.steps!)) steps" : "steps")
 				.foregroundColor(Color("Primary"))
 				.font(.custom(FontNameManager.FallingSky.medium, size: 28))
 			
@@ -69,7 +41,7 @@ struct HomeView: View {
 		.background(Color("Secondary"))
 		.edgesIgnoringSafeArea(.all)
 		.onAppear {
-			initializePedometer()
+			pedoMeterService.initializePedometer()
 		}
 	}
 }
@@ -78,7 +50,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
 	static var previews: some View {
 		HomeView()
-			.environmentObject(StopWatchService())
+			.environmentObject(PedometerService())
 			.previewDevice("iPhone 12 Pro")
 	}
 }
