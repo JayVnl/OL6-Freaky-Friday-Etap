@@ -15,6 +15,15 @@
 		25515C3E27F7439C00DCD037 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25515C3D27F7439C00DCD037 /* TopBar.swift */; };
 		25515C4027F74A3800DCD037 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25515C3F27F74A3800DCD037 /* TimerButton.swift */; };
 		25ABA86627F7524D0029F781 /* TimerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ABA86527F7524D0029F781 /* TimerText.swift */; };
+		25DF69E627F874E80087C8B3 /* FallingSkyBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25DF69DE27F874E80087C8B3 /* FallingSkyBold.otf */; };
+		25DF69E727F874E80087C8B3 /* FallingSkyBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25DF69DF27F874E80087C8B3 /* FallingSkyBlack.otf */; };
+		25DF69E827F874E80087C8B3 /* FallingSkyMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25DF69E027F874E80087C8B3 /* FallingSkyMedium.otf */; };
+		25DF69E927F874E80087C8B3 /* FallingSkySemibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25DF69E127F874E80087C8B3 /* FallingSkySemibold.otf */; };
+		25DF69EA27F874E80087C8B3 /* FallingSkyBoldplus.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25DF69E227F874E80087C8B3 /* FallingSkyBoldplus.otf */; };
+		25DF69EB27F874E80087C8B3 /* FallingSky.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25DF69E327F874E80087C8B3 /* FallingSky.otf */; };
+		25DF69EC27F874E80087C8B3 /* FallingSkyLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25DF69E427F874E80087C8B3 /* FallingSkyLight.otf */; };
+		25DF69ED27F874E80087C8B3 /* FallingSkyExtrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25DF69E527F874E80087C8B3 /* FallingSkyExtrabold.otf */; };
+		25DF69F027F876D80087C8B3 /* FontNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF69EF27F876D80087C8B3 /* FontNameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +36,16 @@
 		25515C3D27F7439C00DCD037 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		25515C3F27F74A3800DCD037 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 		25ABA86527F7524D0029F781 /* TimerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerText.swift; sourceTree = "<group>"; };
+		25DF697427F861280087C8B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		25DF69DE27F874E80087C8B3 /* FallingSkyBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingSkyBold.otf; sourceTree = "<group>"; };
+		25DF69DF27F874E80087C8B3 /* FallingSkyBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingSkyBlack.otf; sourceTree = "<group>"; };
+		25DF69E027F874E80087C8B3 /* FallingSkyMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingSkyMedium.otf; sourceTree = "<group>"; };
+		25DF69E127F874E80087C8B3 /* FallingSkySemibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingSkySemibold.otf; sourceTree = "<group>"; };
+		25DF69E227F874E80087C8B3 /* FallingSkyBoldplus.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingSkyBoldplus.otf; sourceTree = "<group>"; };
+		25DF69E327F874E80087C8B3 /* FallingSky.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingSky.otf; sourceTree = "<group>"; };
+		25DF69E427F874E80087C8B3 /* FallingSkyLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingSkyLight.otf; sourceTree = "<group>"; };
+		25DF69E527F874E80087C8B3 /* FallingSkyExtrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingSkyExtrabold.otf; sourceTree = "<group>"; };
+		25DF69EF27F876D80087C8B3 /* FontNameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontNameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				2545C7B727F7937900B26557 /* StopWatchService.swift */,
+				25DF69EF27F876D80087C8B3 /* FontNameManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -67,9 +87,11 @@
 		25515C2C27F7368500DCD037 /* Etap */ = {
 			isa = PBXGroup;
 			children = (
+				25DF697427F861280087C8B3 /* Info.plist */,
 				2545C7B627F7935D00B26557 /* Services */,
 				25515C3B27F7393300DCD037 /* Views */,
 				25515C2D27F7368500DCD037 /* EtapApp.swift */,
+				25DF69EE27F874F60087C8B3 /* Fonts */,
 				25515C3127F7368700DCD037 /* Assets.xcassets */,
 				25515C3327F7368700DCD037 /* Preview Content */,
 			);
@@ -101,6 +123,29 @@
 				25ABA86527F7524D0029F781 /* TimerText.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		25DF69DD27F874E80087C8B3 /* FallingSky */ = {
+			isa = PBXGroup;
+			children = (
+				25DF69DE27F874E80087C8B3 /* FallingSkyBold.otf */,
+				25DF69DF27F874E80087C8B3 /* FallingSkyBlack.otf */,
+				25DF69E027F874E80087C8B3 /* FallingSkyMedium.otf */,
+				25DF69E127F874E80087C8B3 /* FallingSkySemibold.otf */,
+				25DF69E227F874E80087C8B3 /* FallingSkyBoldplus.otf */,
+				25DF69E327F874E80087C8B3 /* FallingSky.otf */,
+				25DF69E427F874E80087C8B3 /* FallingSkyLight.otf */,
+				25DF69E527F874E80087C8B3 /* FallingSkyExtrabold.otf */,
+			);
+			path = FallingSky;
+			sourceTree = "<group>";
+		};
+		25DF69EE27F874F60087C8B3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				25DF69DD27F874E80087C8B3 /* FallingSky */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +206,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25DF69E727F874E80087C8B3 /* FallingSkyBlack.otf in Resources */,
+				25DF69EA27F874E80087C8B3 /* FallingSkyBoldplus.otf in Resources */,
+				25DF69E827F874E80087C8B3 /* FallingSkyMedium.otf in Resources */,
+				25DF69ED27F874E80087C8B3 /* FallingSkyExtrabold.otf in Resources */,
+				25DF69EC27F874E80087C8B3 /* FallingSkyLight.otf in Resources */,
 				25515C3527F7368700DCD037 /* Preview Assets.xcassets in Resources */,
+				25DF69E927F874E80087C8B3 /* FallingSkySemibold.otf in Resources */,
+				25DF69E627F874E80087C8B3 /* FallingSkyBold.otf in Resources */,
+				25DF69EB27F874E80087C8B3 /* FallingSky.otf in Resources */,
 				25515C3227F7368700DCD037 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +231,7 @@
 				25515C4027F74A3800DCD037 /* TimerButton.swift in Sources */,
 				25515C3E27F7439C00DCD037 /* TopBar.swift in Sources */,
 				25ABA86627F7524D0029F781 /* TimerText.swift in Sources */,
+				25DF69F027F876D80087C8B3 /* FontNameManager.swift in Sources */,
 				25515C2E27F7368500DCD037 /* EtapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +356,7 @@
 		25515C3927F7368700DCD037 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App-icon";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -310,9 +364,12 @@
 				DEVELOPMENT_TEAM = AAMRL89976;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Etap/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "\"\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,14 +381,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		25515C3A27F7368700DCD037 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App-icon";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -339,9 +396,12 @@
 				DEVELOPMENT_TEAM = AAMRL89976;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Etap/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "\"\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -353,7 +413,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

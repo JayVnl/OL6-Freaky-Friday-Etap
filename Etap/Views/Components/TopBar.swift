@@ -28,23 +28,25 @@ struct TopBar: View {
 							.fill(Color("Primary"))
 							.frame(maxWidth: g.size.width * 0.5, maxHeight: 5)
 					}
+					
+					HStack(alignment: .top) {
+						VStack(alignment: .leading, spacing: 6) {
+							Image("Full-logo")
+							Text("Every step counts")
+								.foregroundColor(Color("Secondary"))
+								.font(.custom(FontNameManager.FallingSky.medium, size: 21))
+						} //: VSTACK
+						Spacer()
+						Text(DateFormatter.displayDate.string(from: Date()))
+							.font(.custom(FontNameManager.FallingSky.regular, size: 17))
+							.foregroundColor(Color("Secondary"))
+							.padding(.top, 4)
+					} //: HSTACK
+					.padding(.bottom, 18)
+					.frame(maxWidth: .infinity, maxHeight: 130, alignment: .bottom)
+					.padding(.horizontal, 20)
+					
 				}.frame(maxHeight: 160)
-				
-				HStack {
-					VStack(alignment: .leading) {
-						Text("Etap")
-							.foregroundColor(Color.white)
-							.font(.system(size: 36))
-						Text("Every step counts")
-							.foregroundColor(Color.white)
-					} //: VSTACK
-					Spacer()
-					Text(DateFormatter.displayDate.string(from: Date()))
-						.foregroundColor(Color.white)
-				} //: HSTACK
-				.frame(maxWidth: .infinity)
-				.padding(.horizontal, 20)
-				.padding(.bottom, 20)
 			} //: ZSTACK
 			.frame(maxWidth: .infinity)
 		}

@@ -12,6 +12,13 @@ struct EtapApp: App {
 	// MARK: PROPERTIES
 	@ObservedObject var stopWatchService = StopWatchService()
 	
+	init() {
+					for family in UIFont.familyNames.sorted() {
+							let names = UIFont.fontNames(forFamilyName: family)
+							print("Family: \(family) Font names: \(names)")
+					}
+			}
+	
 	// MARK: BODY
 	var body: some Scene {
 		WindowGroup {
