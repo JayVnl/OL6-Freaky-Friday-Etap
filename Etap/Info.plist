@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FallingSky.otf</string>
+		<string>FallingSkyLight.otf</string>
+		<string>FallingSkyMedium.otf</string>
+		<string>FallingSkySemibold.otf</string>
+		<string>FallingSkyBold.otf</string>
+		<string>FallingSkyBoldplus.otf</string>
+		<string>FallingSkyExtrabold.otf</string>
+		<string>FallingSkyBlack.otf</string>
+	</array>
+</dict>
+</plist>

@@ -17,7 +17,7 @@ struct TopBar: View {
 					VStack(alignment: .leading,spacing: 5) {
 						Rectangle()
 							.fill(Color("Primary"))
-							.frame(maxHeight: 130)
+							.frame(maxHeight: 140)
 						Rectangle()
 							.fill(Color("Primary"))
 							.frame(maxHeight: 5)
@@ -36,17 +36,17 @@ struct TopBar: View {
 								.foregroundColor(Color("Secondary"))
 								.font(.custom(FontNameManager.FallingSky.medium, size: 21))
 						} //: VSTACK
+						.frame(maxWidth: .infinity, alignment: .leading)
 						Spacer()
 						Text(DateFormatter.displayDate.string(from: Date()))
 							.font(.custom(FontNameManager.FallingSky.regular, size: 17))
 							.foregroundColor(Color("Secondary"))
 							.padding(.top, 4)
 					} //: HSTACK
-					.padding(.bottom, 18)
-					.frame(maxWidth: .infinity, maxHeight: 130, alignment: .bottom)
+					.frame(maxWidth: .infinity, maxHeight: 125, alignment: .bottom)
 					.padding(.horizontal, 20)
 					
-				}.frame(maxHeight: 160)
+				}.frame(maxHeight: 170)
 			} //: ZSTACK
 			.frame(maxWidth: .infinity)
 		}

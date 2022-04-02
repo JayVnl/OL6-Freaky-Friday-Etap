@@ -11,19 +11,26 @@ import SwiftUI
 struct EtapApp: App {
 	// MARK: PROPERTIES
 	@ObservedObject var stopWatchService = StopWatchService()
-	
-	init() {
-					for family in UIFont.familyNames.sorted() {
-							let names = UIFont.fontNames(forFamilyName: family)
-							print("Family: \(family) Font names: \(names)")
-					}
-			}
+	@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 	
 	// MARK: BODY
 	var body: some Scene {
 		WindowGroup {
 			HomeView()
 				.environmentObject(stopWatchService)
+				.onAppear {
+					UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+					AppDelegate.orientationLock = .portrait
+				}
 		}
+	}
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+	
+	static var orientationLock = UIInterfaceOrientationMask.all
+	
+	func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+		return AppDelegate.orientationLock
 	}
 }
